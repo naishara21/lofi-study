@@ -1,0 +1,24 @@
+.btn-todo{
+    position: absolute;
+    display: grid;
+    float: right;
+    padding: 10px 10px 10px 10px;
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(17, 25, 40, 0.75);
+    border-radius: 8px;
+    border: 2px solid rgba(205, 202, 202, 0.679);
+    right: 20px;
+    top: 10px;
+    z-index: 12;
+  }
+  .btn-todo:hover{
+    background: rgba(27, 27, 27, 0.3);
+  }
+  .todobtn{
+    color:white;
+    cursor: pointer;
+  }
+  .todobtn:hover{
+    color: rgb(171, 171, 171);
+  }

@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+.quote .timer .time{
+    position:absolute;
+    color: white;
+    font-size: 30px;
+    font-weight: 500;
+    left:49%;
+    top:22%;
+    transform: translate(-50%,-50%);
+    font-family: 'Press Start 2P', cursive;
+    text-align: center;
+}
+.quote .timer .date{
+    position:absolute;
+    color: white;
+    font-size: 30px;
+    font-weight: 500;
+    left:49%;
+    top:14%;
+    transform: translate(-50%,-50%);
+    font-family: 'Press Start 2P', cursive;
+    text-align: center;
+}

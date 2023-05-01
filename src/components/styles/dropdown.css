@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+.container{
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(17, 25, 40, 0.75);
+    border-radius: 8px;
+    border: 1.5px solid rgba(205, 202, 202, 0.679);
+    display: inline-block;
+    font-family: 'Press Start 2P', cursive;
+    position: absolute;
+    top:50px;
+    width: 230px;
+    height: 260px;
+    overflow: hidden;
+    transition: all 0.3s cubic-bezier(0.93, 0.88, 0.1, 0.8);
+    z-index: 12;
+}
+.channel{
+    border: none;
+    font-family: 'Press Start 2P', cursive;
+    cursor: pointer;
+    color: silver;
+    display: block;
+    font-size: 11px;
+    text-transform: uppercase;
+    transition: 0.2s all;
+    font-weight: 500;
+    padding: 5px 5px 4px 30px;
+}
+.channel-container .link-update {
+    animation-timing-function: ease;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-name: bounce;
+    transform-origin: bottom;
+}
+.channel-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    transition: 0.2s all;
+    align-self: flex-start;
+}
+.channel-container:hover {
+    transform: scale(1.2);
+}
+.channel-container:hover .channel {
+    color: white;
+}
+.channel-container:active {
+    color: white;
+    transform: scale(0.98);
+}
+.scene{
+    color:white;
+    cursor: pointer;
+  }
+  .scene:hover{
+    color: rgb(171, 171, 171);
+  }
+  .dropdown{
+    position: absolute;
+    display: grid;
+    float: right;
+    padding: 10px 10px 10px 10px;
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(17, 25, 40, 0.75);
+    border-radius: 8px;
+    border: 2px solid rgba(205, 202, 202, 0.679);
+    left: 20px;
+    top:20px;
+  }
+.dropdown:hover{
+  background: rgba(27, 27, 27, 0.3);
+}

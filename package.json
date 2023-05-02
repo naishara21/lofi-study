@@ -4,6 +4,7 @@
   "homepage": "https://github.com/Divya2163/lofi-study",
   "private": true,
   "dependencies": {
+    "-": "^0.0.1",
     "@fortawesome/fontawesome-svg-core": "^6.4.0",
     "@fortawesome/free-solid-svg-icons": "^6.4.0",
     "@fortawesome/react-fontawesome": "^0.2.0",
@@ -14,6 +15,7 @@
     "react-circular-progressbar": "^2.1.0",
     "react-dom": "^18.2.0",
     "react-player": "^2.12.0",
+    "react-router-dom": "^6.11.0",
     "react-scripts": "5.0.1",
     "react-slider": "^2.0.4",
     "styled-components": "^5.3.9",

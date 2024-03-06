@@ -15,14 +15,17 @@ Lofi Study is a web app that helps you with your study session.
 - `Tailwind CSS`
 - `Node JS`
 - `API`
-  
+
 ## 📝 How It Works
 
-Rapid type gives random paragraphs and a timer of 60 seconds and gives you WPM and mistakes count as you type. It has clear color to distinguish between typed and mistyped words to give more easy visuals. The clean UI makes it pleasing. The user can retake the test multiple times and can have more practice. 
+Lofi Study provides easy customization to the study session. It allows you to have a Pomodoro timer and adjust the timer according to your preferences. There are multiple background themes to choose from which are provided by 24/7 live Lofi videos from videos. When there is no internet connection, instead of videos from YouTube the user will only have an image holder from the same video to have an aesthetic Lofi image. The user can adjust the volume of the music, skip to another video background, and even pause it. The "Get quotes" button  gives quotes from Anime through an API to provide motivation. The study sessions are indicated by a red header and breaks by green.  
+
+
+## 💡 Improvements
+
+- **Full-screen mode**: To help the user concentrate more with fewer distractions.
+- **User Profile**: Allowing user to sign in and have track of their study session.
+- **Session stats**: Provide user with stats on the time spend on sessions and breaks. 
 
 ## ⭐ How it looks
-
-
-
-
 

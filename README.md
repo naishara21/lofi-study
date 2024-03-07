@@ -24,8 +24,10 @@ Lofi Study provides easy customization to the study session. It allows you to ha
 ## 💡 Improvements
 
 - **Full-screen mode**: To help the user concentrate more with fewer distractions.
-- **User Profile**: Allowing user to sign in and have track of their study session.
-- **Session stats**: Provide user with stats on the time spend on sessions and breaks. 
+- **User Profile**: Allowing users to sign in and keep track of their study session.
+- **Session stats**: Provide users with stats on the time spent on sessions and breaks.
+- **To-do list**: Allowing users to add their tasks and track them.
 
 ## ⭐ How it looks
 
+https://github.com/Divya2163/lofi-study/assets/76438709/b8f6d2ec-5741-4b37-8451-f9063853c1e2

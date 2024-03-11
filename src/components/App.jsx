@@ -1,26 +1,25 @@
-import React, { useState, useRef } from 'react';
-import ReactPlayer from 'react-player/youtube';
+import React, { useState, useRef } from "react";
+import ReactPlayer from "react-player/youtube";
 
-import Overlay from './Overlay';
-import PlayerControls from './PlayerControls';
-import ChannelList from './ChannelList';
-import Pomodoro from './Pomodoro';
-import Card from './Card';
-import TimeQuote from './TimeQuote';
+import Overlay from "./Overlay";
+import PlayerControls from "./PlayerControls";
+import ChannelList from "./ChannelList";
+import Pomodoro from "./Pomodoro";
+import Card from "./Card";
+import TimeQuote from "./TimeQuote";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {faTree} from "@fortawesome/free-solid-svg-icons";
-import './styles/player.css'
-import './styles/dropdown.css'
-import './styles/quotes.css'
-import channels from '../data/channels';
-
+import { faTree } from "@fortawesome/free-solid-svg-icons";
+import "./styles/player.css";
+import "./styles/dropdown.css";
+import "./styles/quotes.css";
+import channels from "../data/channels";
 
 function App() {
   const [playing, setPlaying] = useState(false);
   const [channel, setChannel] = useState(channels[0]);
   const [status, setStatus] = useState(false); // used for overlay.
   const [muted, setMuted] = useState(false);
-  const[toggle,setToggle]=useState(false)
+  const [toggle, setToggle] = useState(false);
   const [volume, setVolume] = useState(0.5);
 
   const [quote, setQuote] = useState({
@@ -34,9 +33,9 @@ function App() {
 
   // Functions
   const setIframeTabIndex = () => {
-    const iframe = document.querySelector('iframe');
+    const iframe = document.querySelector("iframe");
     if (iframe) {
-      iframe.setAttribute('tabIndex', '-1');
+      iframe.setAttribute("tabIndex", "-1");
     }
   };
 
@@ -114,35 +113,34 @@ function App() {
           onPlay={handlePlay}
           onPause={handlePause}
           config={{
-            attributes: { tabIndex: -1 }
+            attributes: { tabIndex: -1 },
           }}
         />
       </div>
-      <Pomodoro/>
-      <Overlay
-        status={status}
-        channel={channel}
-      />
-      <div className='dropdown'>
-      <FontAwesomeIcon
-      className="scene"
-      size="xl"
-      icon={faTree}
-      onClick={()=>setToggle(!toggle)}/>
-      {toggle && (       
-      <div className='container'>
-        <div className="channel-ui-wrapper">
-        <div className="channel-list-and-info-wrapper">
-          <ChannelList
-            channelList={channels}
-            activeChannel={channel}
-            switchChannel={switchChannel}
-          />
-        </div>
+      <Pomodoro />
+      <Overlay status={status} channel={channel} />
+      <div className="dropdown">
+        <FontAwesomeIcon
+          className="scene"
+          size="xl"
+          icon={faTree}
+          onClick={() => setToggle(!toggle)}
+        />
+        {toggle && (
+          <div className="container">
+            <div className="channel-ui-wrapper">
+              <div className="channel-list-and-info-wrapper">
+                <ChannelList
+                  channelList={channels}
+                  activeChannel={channel}
+                  switchChannel={switchChannel}
+                />
+              </div>
+            </div>
+          </div>
+        )}
       </div>
-    </div>)} 
-      </div>
-      <TimeQuote/>
+      <TimeQuote />
       <div className="controls-wrapper">
         <PlayerControls
           handlePlay={handlePlay}
@@ -156,20 +154,15 @@ function App() {
         />
       </div>
       <div className="card overflow-auto scrollbar-thin scrollbar-thumb-gray-400 scrollbar-track-gray-300">
-      <div>
-      <button
-          className='quote-btn'
-            onClick={getQuote}>Get Quote
+        <div>
+          <button className="quote-btn" onClick={getQuote}>
+            Get Quote
           </button>
-        {quote && <Card quote={quote} />}
-          
+          {quote && <Card quote={quote} />}
+        </div>
       </div>
     </div>
-    </div>
-    
   );
 }
 
 export default App;
-
-

@@ -1,5 +1,6 @@
 module.exports = {
   root: true,
+  parser: "@babel/eslint-parser", // Set parser here if needed (or remove if not required)
   parserOptions: {
     ecmaVersion: 2020,
     sourceType: "module",
@@ -30,6 +31,5 @@ module.exports = {
     ],
     "prettier/prettier": ["error", {}, { usePrettierrc: true }],
     "react/prop-types": "off",
-    parser: "0",
   },
 };

@@ -20,10 +20,10 @@
     "react-slider": "^2.0.4",
     "styled-components": "^5.3.9",
     "web-vitals": "^2.1.4",
-    "serve": "^14.2.0"
+    "serve": "^14.0.0" // Add serve here
   },
   "scripts": {
-    "start": "serve -s build",
+    "start": "serve -s build", // Updated start command
     "build": "react-scripts build && cp build/index.html build/404.html",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
